@@ -1,0 +1,36 @@
+<div class="container">
+    <form [formGroup]="formprofile" (ngSubmit)="onSubmit()">
+        <label>
+            First Name:
+            <input type="text" id ="Firstname" formControlName="Firstname"  class="form-control" placeholder="enter Firstname...">
+        </label>
+        <label><br>
+            Last Name:
+            <input type="text" id ="Lastname" formControlName="Lastname" class="form-control"  placeholder="enter Lastname...">
+        </label><br>
+        <label>
+            Email:
+            <input type="text" id ="Email" formControlName="Email"  class="form-control" placeholder="enter Email...">
+        </label><br>
+        <label>
+            Password:
+            <input type="text" id ="Password" formControlName="Password" class="form-control" placeholder="enter Password...">
+        </label><br>
+        <button type="submit" >Submit</button> 
+       </form>
+       <table style="border: 1px;">
+           <tr>
+               <th>Fname</th>
+               <th>Lname</th>
+               <th>Email</th>
+               <th>Password</th>
+           </tr>
+           <tr >
+               <td>{{fname}}</td>
+               <td>{{lname}}</td>
+               <td>{{Email}}</td>
+               <td>{{Password}}</td>
+
+           </tr>
+       </table>
+</div>

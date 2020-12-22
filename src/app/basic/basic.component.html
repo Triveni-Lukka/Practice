@@ -1,0 +1,30 @@
+<form  [formGroup]="Loginform" (ngSubmit)="onSubmit()">
+    <label>
+        Fname:
+    <input type="text" id="name" formControlName="fname" placeholder="Enter fname" required >
+</label><br>
+<label>
+    Lname:
+<input type="text" id="lname" formControlName="lname" placeholder="Enter lname" required >
+</label><br>
+<label>
+    Email:
+<input type="text" id="email" formControlName="email" placeholder="Enter email" required >
+</label><br>
+
+<button type="submit">Submit</button>
+</form>
+<table>
+    <tr>
+    <th>Email</th>
+    <th>FName</th>
+    <th>LName</th>
+    
+</tr>
+<tr  *ngFor="  let product of products" >
+    <td>{{product.email}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.username}}</td>
+    <td>delect</td>
+</tr>
+</table>
